@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your AI for Senior Developers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__title">Choose Your AI for Senior Developers</h1>
+                <p class="header__subtitle">Professional AI tool selection guide for experienced development teams</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__tabs">
+                <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+                <button class="tab-btn" data-tab="categories">Tool Categories</button>
+                <button class="tab-btn" data-tab="wizard">Decision Wizard</button>
+                <button class="tab-btn" data-tab="comparison">Local vs Cloud</button>
+                <button class="tab-btn" data-tab="recommendations">Recommendations</button>
+                <button class="tab-btn" data-tab="practices">Best Practices</button>
+                <button class="tab-btn" data-tab="resources">Resources</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main container">
+        <!-- Dashboard Tab -->
+        <section id="dashboard" class="tab-content active">
+            <div class="dashboard">
+                <div class="dashboard__intro">
+                    <h2>Welcome to Your AI Tool Selection Guide</h2>
+                    <p>This comprehensive tool helps senior developers and technical leaders make informed decisions about AI tool adoption. Navigate through different sections to explore options, assess your needs, and get personalized recommendations.</p>
+                </div>
+
+                <div class="dashboard__stats">
+                    <div class="stat-card">
+                        <h3>7</h3>
+                        <p>Tool Categories</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>25+</h3>
+                        <p>Popular Tools</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>4</h3>
+                        <p>Decision Factors</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>20+</h3>
+                        <p>Best Practices</p>
+                    </div>
+                </div>
+
+                <div class="dashboard__actions">
+                    <button class="btn btn--primary btn--lg" onclick="switchTab('wizard')">Start Decision Wizard</button>
+                    <button class="btn btn--outline btn--lg" onclick="switchTab('categories')">Explore Categories</button>
+                </div>
+
+                <div class="dashboard__chart">
+                    <h3>AI Tool Categories Comparison</h3>
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750345851/pplx_code_interpreter/4c15a0ee_bahzyf.jpg" alt="AI Development Tool Categories Comparison Chart" class="comparison-chart">
+                    <p class="chart-caption">Key characteristics evaluation across seven AI development tool categories</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool Categories Tab -->
+        <section id="categories" class="tab-content">
+            <div class="categories">
+                <div class="categories__header">
+                    <h2>AI Tool Categories</h2>
+                    <p>Explore different types of AI tools available for development teams</p>
+                </div>
+                <div class="categories__grid" id="categoriesGrid">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Decision Wizard Tab -->
+        <section id="wizard" class="tab-content">
+            <div class="wizard">
+                <div class="wizard__header">
+                    <h2>Decision Wizard</h2>
+                    <p>Answer a few questions to get personalized AI tool recommendations</p>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" id="wizardProgress"></div>
+                    </div>
+                    <p class="progress-text">Step <span id="currentStep">1</span> of <span id="totalSteps">4</span></p>
+                </div>
+                
+                <div class="wizard__content" id="wizardContent">
+                    <!-- Wizard questions will be populated by JavaScript -->
+                </div>
+
+                <div class="wizard__actions">
+                    <button class="btn btn--outline" id="prevBtn" onclick="previousStep()" disabled>Previous</button>
+                    <button class="btn btn--primary" id="nextBtn" onclick="nextStep()">Next</button>
+                </div>
+
+                <div class="wizard__results" id="wizardResults" style="display: none;">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Local vs Cloud Comparison Tab -->
+        <section id="comparison" class="tab-content">
+            <div class="comparison">
+                <div class="comparison__header">
+                    <h2>Local vs Cloud Deployment</h2>
+                    <p>Compare deployment options to find the best fit for your organization</p>
+                </div>
+                
+                <div class="deployment-comparison">
+                    <div class="deployment-option">
+                        <h3>Local Deployment</h3>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>Advantages</h4>
+                                <ul id="localAdvantages">
+                                    <!-- Populated by JavaScript -->
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>Disadvantages</h4>
+                                <ul id="localDisadvantages">
+                                    <!-- Populated by JavaScript -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="best-for">
+                            <h4>Best For</h4>
+                            <ul id="localBestFor">
+                                <!-- Populated by JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="deployment-option">
+                        <h3>Cloud Deployment</h3>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>Advantages</h4>
+                                <ul id="cloudAdvantages">
+                                    <!-- Populated by JavaScript -->
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>Disadvantages</h4>
+                                <ul id="cloudDisadvantages">
+                                    <!-- Populated by JavaScript -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="best-for">
+                            <h4>Best For</h4>
+                            <ul id="cloudBestFor">
+                                <!-- Populated by JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Tab -->
+        <section id="recommendations" class="tab-content">
+            <div class="recommendations">
+                <div class="recommendations__header">
+                    <h2>Tool Recommendations</h2>
+                    <p>Discover popular AI tools with detailed information and comparisons</p>
+                    
+                    <div class="filters">
+                        <select id="categoryFilter" class="form-control">
+                            <option value="">All Categories</option>
+                        </select>
+                        <select id="securityFilter" class="form-control">
+                            <option value="">All Security Levels</option>
+                            <option value="Very High">Very High</option>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                        <input type="text" id="searchFilter" class="form-control" placeholder="Search tools...">
+                    </div>
+                </div>
+                
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- Tools will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Practices Tab -->
+        <section id="practices" class="tab-content">
+            <div class="practices">
+                <div class="practices__header">
+                    <h2>Best Practices</h2>
+                    <p>Essential guidelines for successful AI tool adoption in development teams</p>
+                </div>
+                
+                <div class="practices__categories">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Security">Security</button>
+                    <button class="filter-btn" data-category="Productivity">Productivity</button>
+                    <button class="filter-btn" data-category="Quality">Quality</button>
+                    <button class="filter-btn" data-category="Team Adoption">Team Adoption</button>
+                </div>
+                
+                <div class="practices__grid" id="practicesGrid">
+                    <!-- Practices will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Tab -->
+        <section id="resources" class="tab-content">
+            <div class="resources">
+                <div class="resources__header">
+                    <h2>Resource Center</h2>
+                    <p>Additional resources for AI tool evaluation and implementation</p>
+                </div>
+                
+                <div class="resources__grid">
+                    <div class="resource-card">
+                        <h3>Documentation & Guides</h3>
+                        <ul>
+                            <li><a href="https://docs.github.com/en/copilot" target="_blank">GitHub Copilot Documentation</a></li>
+                            <li><a href="https://www.tabnine.com/documentation" target="_blank">Tabnine Documentation</a></li>
+                            <li><a href="https://localai.io/docs/" target="_blank">LocalAI Documentation</a></li>
+                            <li><a href="https://www.codium.ai/docs/" target="_blank">Codium AI Documentation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>Industry Reports</h3>
+                        <ul>
+                            <li><a href="https://github.blog/2022-09-07-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/" target="_blank">GitHub Copilot Impact Study</a></li>
+                            <li><a href="https://stackoverflow.blog/2023/04/26/ai-assisted-coding-survey-results/" target="_blank">Stack Overflow AI Survey</a></li>
+                            <li><a href="https://www.jetbrains.com/lp/devecosystem-2023/" target="_blank">JetBrains Developer Ecosystem</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>Training Resources</h3>
+                        <ul>
+                            <li><a href="https://github.com/skills/copilot-codespaces-vscode" target="_blank">GitHub Copilot Training</a></li>
+                            <li><a href="https://learn.microsoft.com/en-us/training/paths/copilot/" target="_blank">Microsoft Copilot Learning Path</a></li>
+                            <li><a href="https://www.coursera.org/learn/prompt-engineering" target="_blank">Prompt Engineering Courses</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>Community & Forums</h3>
+                        <ul>
+                            <li><a href="https://github.com/features/copilot/community" target="_blank">GitHub Copilot Community</a></li>
+                            <li><a href="https://stackoverflow.com/questions/tagged/github-copilot" target="_blank">Stack Overflow Discussions</a></li>
+                            <li><a href="https://www.reddit.com/r/MachineLearning/" target="_blank">Machine Learning Reddit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Choose Your AI for Senior Developers. Professional AI tool selection guide.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "Security & Privacy": {
+    "considerations": [
+      "Data sensitivity level",
+      "Regulatory compliance requirements",
+      "On-premises vs cloud deployment",
+      "Code exposure risks",
+      "Intellectual property protection"
+    ],
+    "evaluation_questions": [
+      "What is the sensitivity level of your codebase?",
+      "Are you subject to specific compliance regulations?",
+      "Do you need to keep code on-premises?",
+      "What are your data residency requirements?"
+    ]
+  },
+  "Technical Requirements": {
+    "considerations": [
+      "Programming languages used",
+      "Development environment setup",
+      "Integration requirements",
+      "Performance needs",
+      "Scalability requirements"
+    ],
+    "evaluation_questions": [
+      "Which programming languages does your team use?",
+      "What IDEs and development tools are you using?",
+      "Do you need real-time or batch processing?",
+      "What are your performance requirements?"
+    ]
+  },
+  "Team & Organization": {
+    "considerations": [
+      "Team size and structure",
+      "Skill level and experience",
+      "Budget constraints",
+      "Training needs",
+      "Change management"
+    ],
+    "evaluation_questions": [
+      "What is your team's experience level with AI tools?",
+      "What is your budget for AI tooling?",
+      "How much training time can you allocate?",
+      "What is your tolerance for change?"
+    ]
+  },
+  "Operational Considerations": {
+    "considerations": [
+      "Maintenance overhead",
+      "Support and documentation",
+      "Vendor reliability",
+      "Long-term sustainability",
+      "ROI expectations"
+    ],
+    "evaluation_questions": [
+      "How much maintenance can your team handle?",
+      "What level of support do you need?",
+      "What are your ROI expectations?",
+      "How important is vendor stability?"
+    ]
+  }
+}

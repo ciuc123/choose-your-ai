@@ -1,0 +1,148 @@
+{
+  "Code Generation & Completion": {
+    "description": "Tools that generate code, provide autocompletion, and assist with coding tasks",
+    "examples": [
+      "GitHub Copilot",
+      "Tabnine",
+      "Cody AI",
+      "Cursor",
+      "Windsurf"
+    ],
+    "use_cases": [
+      "Code autocomplete",
+      "Boilerplate generation",
+      "Function creation",
+      "Documentation"
+    ],
+    "key_considerations": [
+      "Language support",
+      "IDE integration",
+      "Code quality",
+      "Security"
+    ]
+  },
+  "Code Review & Analysis": {
+    "description": "Tools that analyze code quality, suggest improvements, and review code changes",
+    "examples": [
+      "Codium AI",
+      "WhatTheDiff",
+      "Grit.io",
+      "Stepsize AI"
+    ],
+    "use_cases": [
+      "Code review",
+      "Bug detection",
+      "Performance optimization",
+      "Security analysis"
+    ],
+    "key_considerations": [
+      "Accuracy",
+      "False positive rate",
+      "Integration with version control",
+      "Team collaboration"
+    ]
+  },
+  "Testing & QA": {
+    "description": "Tools that generate tests, identify bugs, and ensure code quality",
+    "examples": [
+      "Codium AI",
+      "Bugasura",
+      "GitHub Copilot for tests"
+    ],
+    "use_cases": [
+      "Unit test generation",
+      "Bug tracking",
+      "Test case creation",
+      "Quality assurance"
+    ],
+    "key_considerations": [
+      "Test coverage",
+      "Test quality",
+      "Framework support",
+      "Maintenance overhead"
+    ]
+  },
+  "Documentation": {
+    "description": "Tools that automatically generate and maintain code documentation",
+    "examples": [
+      "Mintlify Writer",
+      "GitHub Copilot",
+      "Notion AI"
+    ],
+    "use_cases": [
+      "API documentation",
+      "Code comments",
+      "Technical specs",
+      "User guides"
+    ],
+    "key_considerations": [
+      "Accuracy",
+      "Format support",
+      "Maintenance",
+      "Integration"
+    ]
+  },
+  "Local Development Environment": {
+    "description": "Self-hosted AI tools that run locally without cloud dependencies",
+    "examples": [
+      "LocalAI",
+      "Ollama",
+      "Code Llama local",
+      "Aider"
+    ],
+    "use_cases": [
+      "Private code analysis",
+      "Offline development",
+      "Sensitive projects",
+      "Custom models"
+    ],
+    "key_considerations": [
+      "Hardware requirements",
+      "Model performance",
+      "Privacy",
+      "Maintenance"
+    ]
+  },
+  "Cloud-based AI Services": {
+    "description": "AI tools that run on cloud infrastructure with API access",
+    "examples": [
+      "OpenAI GPT-4",
+      "Anthropic Claude",
+      "Google Gemini",
+      "GitHub Copilot"
+    ],
+    "use_cases": [
+      "Scalable AI processing",
+      "Latest models",
+      "Team collaboration",
+      "Easy setup"
+    ],
+    "key_considerations": [
+      "Data privacy",
+      "Cost",
+      "Latency",
+      "Vendor lock-in"
+    ]
+  },
+  "Specialized Development Tools": {
+    "description": "AI tools designed for specific development domains or languages",
+    "examples": [
+      "JetBrains AI Assistant",
+      "Android Studio Gemini",
+      "Cursor",
+      "Windsurf"
+    ],
+    "use_cases": [
+      "Language-specific optimization",
+      "Framework integration",
+      "Domain expertise",
+      "Workflow automation"
+    ],
+    "key_considerations": [
+      "Specialization depth",
+      "Tool ecosystem",
+      "Learning curve",
+      "Migration effort"
+    ]
+  }
+}
